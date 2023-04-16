@@ -10,7 +10,7 @@
 <body>
 <div layout:fragment="content1">
     <div class="col-6 offset-3 my-5">
-        <form method="post" th:action="@{save(${patient})}">
+        <form method="post" th:action="@{/admin/save(${patient})}">
             <div class="mt-2" >
                 <label for="name" >Nom</label>
                 <input class="form-control" type="text" id="name" name="name" th:value="${patient.name}">
